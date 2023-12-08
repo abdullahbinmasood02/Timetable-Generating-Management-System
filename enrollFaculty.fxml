@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: WHITE;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.enrollFacultyController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="312.0" fitWidth="262.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../OneDrive/Desktop/logo.PNG" />
+               </image>
+            </ImageView>
+            <Line endX="29.79998779296875" endY="206.36444091796875" layoutX="255.0" layoutY="109.0" startX="29.79998779296875" startY="-106.435546875" stroke="PURPLE" strokeWidth="5.0" />
+            <Button fx:id="button1" layoutX="253.0" layoutY="356.0" mnemonicParsing="false" onAction="#switchPage" style="-fx-background-color: purple;" text="HOME" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="299.0" layoutY="127.0" prefHeight="18.0" prefWidth="114.0" text="FACULTY ID" textFill="PURPLE">
+               <font>
+                  <Font name="Lucida Console" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="299.0" layoutY="191.0" text="COURSE ID" textFill="PURPLE">
+               <font>
+                  <Font name="Lucida Console" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="324.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="facultyid" layoutX="26.0" layoutY="119.0" promptText="faculty id" />
+            <TextField fx:id="courseid" layoutX="26.0" layoutY="187.0" promptText="course id" />
+            <Button fx:id="button" layoutX="-9.0" layoutY="270.0" mnemonicParsing="false" onAction="#enrollFaculty" style="-fx-background-color: purple;" text="ENROLL" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="-30.0" layoutY="23.0" prefHeight="18.0" prefWidth="148.0" text="ENROLL FACULTY" textFill="PURPLE" underline="true">
+               <font>
+                  <Font name="Lucida Console" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="errorLabel" layoutX="-124.0" layoutY="233.0" prefHeight="28.0" prefWidth="307.0" textFill="GREEN">
+               <font>
+                  <Font name="Lucida Console" size="15.0" />
+               </font>
+            </Label>
+            
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
